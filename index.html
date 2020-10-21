@@ -3,42 +3,37 @@
 
 	<head>
 
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-	  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	
-	  <title>Frontend Mentor | Article preview component</title>
+		<title>Frontend Mentor | Article preview component</title>
 
-	  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	  <style>
-	    .attribution { font-size: 11px; text-align: center; }
-	    .attribution a { color: hsl(228, 45%, 44%); }
-	  </style>
-	
 	</head>
 
 	<body>
 
 		<main>
 
-	    	<div class="container-img">
+	    	<div class="container img">
 
-				<img src="./images/drawers.jpg" alt="Drawers">
+				<img class="img__img" src="./images/drawers.jpg" alt="Drawers">
 
 	    	</div>
 
-	    	<div class="container-content">
+	    	<div class="container content">
 
-				<div class="container-content__inner">
+				<div class="content__inner">
 
-					<h1 class="container-content__inner__title">
+					<h1 class="content__inner__title">
 						Shift the overall look and feel 
 						by adding these wonderful 
 						touches to furniture in your home
 					</h1>
 
-					<p class="container-content__inner__p">
+					<p class="content__inner__p">
 
 						Ever been in a room and felt like 
 						something was missing? Perhaps 
@@ -50,24 +45,24 @@
 
 				</div>
 
-				<div class="container-content__author">
+				<div class="content__author">
 
-					<div class="container-content__author__img">
+					<div class="content__author__img">
 
-						<img src="./images/avatar-michelle.jpg" alt="Author">
-
-					</div>
-
-					<div class="container-content__author__name-date">
-
-						<h3 class="container-content__author__name-date__name">Michelle Appleton</h3>
-						<p class="container-content__author__name-date__date">28 Jun 2020</p>
+						<img class="content__author__img__photo" src="./images/avatar-michelle.jpg" alt="Author">
 
 					</div>
 
-					<div class="container-content__author__share">
+					<div class="content__author__name-date">
 
-						<img src="./images/icon-share.svg" alt="Share">
+						<h3 class="content__author__name-date__name">Michelle Appleton</h3>
+						<p class="content__author__name-date__date">28 Jun 2020</p>
+
+					</div>
+
+					<div class="content__author__share">
+
+						<span class="content__author__share__span"><img class="content__author__share__span__img" src="./images/icon-share.svg" alt="Share">Share</span>
 
 					</div>
 
@@ -77,20 +72,13 @@
 			</div>
 
 		</main>
-
-	  
-
-	  
-
-	  
-	  
-
-	  Share
 	
-	  <div class="attribution">
-	    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-	    Coded by <a href="#">Your Name Here</a>.
-	  </div>
+		<div class="attribution">
+      
+			<p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="attribution__wavy">Front</span>end Mentor</a>.</p> 
+			<h6>Coded by <a href="http://www.github.com/Seezly" target="_blank">Sergio <span class="attribution__wavy">"Seezly"</span> Gutierrez</a>.</h6>
+		  
+		  </div>
 
 	</body>
 </html>
