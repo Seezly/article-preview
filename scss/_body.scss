@@ -5,4 +5,8 @@ html {
 
 body {
     background: $bgColor;
+    color: $fontSecundary;
+    font-family: $fontFamily, 'Helvetica neue', Helvetica;
+    font-size: $fontSize;
+    font-weight: $fontWeightPrimary;
 }

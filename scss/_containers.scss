@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+        background: url('../images/drawers.jpg') no-repeat;
+        background-size: cover;
+        width: 40%;
+    }
+
+    .content {
+        width: 60%;
+
+        &__inner {
+
+            &__title {
+                margin: 0;
+                color: $fontPrimary;
+            }
+        }
+
+        &__author {
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            &__img {
+                background: url('../images/avatar-michelle.jpg') no-repeat;
+                background-size: cover;
+                display: flex;
+                border-radius: 100%;
+                width: 20%;
+            }
+
+            &__name-date {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                &__date {
+                    color: $fontTerciary;
+                }
+            }
+
+            &__share {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+
+                &__span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    color: $fontTerciary;
+    text-align: center;
+
+    a {
+        color: $fontPrimary;
+        text-decoration: none;
+    }
+
+    &__wavy {
+        text-decoration: wavy underline;
+    }
+}
