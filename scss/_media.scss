@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1023px) {
+    .main {
+        flex-direction: column;
+        margin-top: 4.5rem;
+
+        .img {
+            background-size: 100% 100%;
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+            margin: 2.5rem 0 0 0;
+
+            &__inner {
+                margin: 0 2.5rem 1.5rem 2.5rem;
+
+                &__p {
+                    margin: 0;
+                }
+            }
+
+            &__author {
+                margin: 0 2.5rem 1rem 2.5rem;
+                width: unset;
+
+                &__img {
+                    width: 15%;
+                }
+
+                &__name-date {
+                    width: 75%;
+                }
+
+                &__share {
+                    margin: 0;
+                    width: 10%;
+                    
+                    &__img {
+                        width: unset;
+                    }
+                }
+                
+            }
+            
+            .author-media {
+                margin: 0;
+                
+                .share-media {
+                    width: 100%;
+    
+                    .share-active-media {
+                        width: 100%;
+                        position: unset;
+                        transform: unset;
+                        padding: 1.25rem 2.75rem;
+                        border-radius: 0;
+                        justify-content: start;
+                    }
+    
+                    .img-media {
+                        width: unset;
+                        margin: 0;
+                        position: absolute;
+                        transform: translate(50vw, 2vh);
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        margin-top: 3rem;
+        position: relative;
+        bottom: 1vh;
+    }
+}

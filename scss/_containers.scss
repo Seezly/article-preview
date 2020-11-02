@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 65%;
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
@@ -20,12 +20,13 @@
 
         &__inner {
 
-            & * {
-                margin-bottom: 2rem;
+            &__p {
+                margin: 0 0 2rem 0;
             }
 
             &__title {
                 color: $fontPrimary;
+                margin: 0 0 1rem 0;
             }
         }
 
@@ -58,20 +59,58 @@
             &__share {
                 display: flex;
                 margin: 0 0 0 auto;
-
+                
                 &__img {
                     margin: 0 0 0 auto;
                     border-radius: 50%;
-                    padding: 0.5rem;
+                    padding: 0.75rem;
+                    width: 100%;
+                    cursor: pointer;
                     
                     &:hover {
                         background-color: $fontTerciary;
                     }
                 }
 
+                &__span {
+                    letter-spacing: 0.25rem;
+                    text-transform: uppercase;
+                }
+
+                &__a {
+                    margin-left: 1rem;
+                }
+
                 &-active {
                     background-color: $fontPrimary;
                     display: flex;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    position: absolute;
+                    width: 19.004%;
+                    justify-content: center;
+                    border-radius: .5rem;
+                    transform: translate(-7.75vw, -13vh);
+                    opacity: 1;
+                    visibility: visible;
+
+                    &__triangle {
+                        border-top: 1rem solid $fontPrimary;
+                        border-left: 1rem solid transparent;
+                        position: absolute;
+                        border-right: 1rem solid transparent;
+                        top: 99%;
+                    }
+
+                    .fab {
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .none {
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }
