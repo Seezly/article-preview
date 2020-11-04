@@ -23,48 +23,58 @@
             &__author {
                 margin: 0 2.5rem 1rem 2.5rem;
                 width: unset;
+                position: relative;
+
+                @include transition(.25s);
 
                 &__img {
                     width: 15%;
+
+                    @include transition(.25s);
                 }
 
                 &__name-date {
                     width: 75%;
+
+                    @include transition(.25s);
                 }
 
                 &__share {
                     margin: 0;
                     width: 10%;
+
+                    @include transition(.25s);
                     
                     &__img {
                         width: unset;
+                        position: relative;
+
+                        @include transition(.25s);
+
+                        &.active {
+                            position: absolute;
+                            right: 1.75rem;
+                            bottom: 0.5rem;
+
+                            @include transition(.25s);
+                        }
                     }
-                }
-                
-            }
-            
-            .author-media {
-                margin: 0;
-                
-                .share-media {
-                    width: 100%;
-    
-                    .share-active-media {
+
+                    &-active {
+                        padding: 1rem 2.5rem;
                         width: 100%;
-                        position: unset;
-                        transform: unset;
-                        padding: 1.25rem 2.75rem;
                         border-radius: 0;
                         justify-content: start;
-                    }
-    
-                    .img-media {
-                        width: unset;
-                        margin: 0;
-                        position: absolute;
-                        transform: translate(50vw, 2vh);
+                        transform: unset;
+                        right: 0;
+                        bottom: 0;
+
+                        &__triangle {
+                            display: none;
+                        }
                     }
                 }
+                
             }
         }
     }

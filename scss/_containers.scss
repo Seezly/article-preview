@@ -1,3 +1,5 @@
+@import 'animations';
+
 .main {
     display: flex;
     justify-content: center;
@@ -12,6 +14,7 @@
         background-size: cover;
         background-position: center;
         width: 40%;
+        height: 20.2rem;
     }
 
     .content {
@@ -66,9 +69,13 @@
                     padding: 0.75rem;
                     width: 100%;
                     cursor: pointer;
+
+                    @include transition(.25s);
                     
                     &:hover {
                         background-color: $fontTerciary;
+
+                        @include transition(.25s);
                     }
                 }
 
@@ -90,16 +97,18 @@
                     width: 19.004%;
                     justify-content: center;
                     border-radius: .5rem;
-                    transform: translate(-7.75vw, -13vh);
+                    transform: translate(-8.125vw, -10.5vh);
                     opacity: 1;
                     visibility: visible;
+
+                    @include transition(.25s);
 
                     &__triangle {
                         border-top: 1rem solid $fontPrimary;
                         border-left: 1rem solid transparent;
                         position: absolute;
                         border-right: 1rem solid transparent;
-                        top: 99%;
+                        top: 92.5%;
                     }
 
                     .fab {
@@ -111,6 +120,8 @@
                 .none {
                     opacity: 0;
                     visibility: hidden;
+
+                    @include transition(.25s);
                 }
             }
         }
