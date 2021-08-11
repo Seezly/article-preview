@@ -18,7 +18,6 @@ function btnClicked() {
         $shareBtn.classList.remove('active');
         $authorImg.classList.remove('none');
         $date.classList.remove('none');
-        $author.style.margin = '0 2.5rem 1rem 2.5rem';
     }
 }
 
